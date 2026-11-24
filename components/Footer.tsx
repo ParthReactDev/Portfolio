@@ -46,7 +46,7 @@ export default function Footer() {
           <div className="h-4 w-px bg-neutral-200 dark:bg-neutral-800" />
           <div className="flex gap-3">
             <a
-              href="https://www.linkedin.com/in/parth-lunagaria-5081891a8"
+              href="https://www.linkedin.com/in/parth-lunagaria"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-emerald-500 dark:hover:text-cyan-400 transition-colors"

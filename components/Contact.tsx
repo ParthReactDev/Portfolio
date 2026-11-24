@@ -49,10 +49,10 @@ export default function Contact() {
       description: "Connect professionally, view verified recommendations and updates.",
       primaryAction: {
         label: "View Profile",
-        href: "https://www.linkedin.com/in/parth-lunagaria-5081891a8",
+        href: "https://www.linkedin.com/in/parth-lunagaria",
         isExternal: true,
       },
-      copyText: "https://www.linkedin.com/in/parth-lunagaria-5081891a8",
+      copyText: "https://www.linkedin.com/in/parth-lunagaria",
     },
     {
       key: "location",
@@ -195,7 +195,7 @@ export default function Contact() {
               Email Directly
             </a>
             <a
-              href="https://www.linkedin.com/in/parth-lunagaria-5081891a8"
+              href="https://www.linkedin.com/in/parth-lunagaria"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-neutral-300 dark:border-neutral-700 hover:border-neutral-400 dark:hover:border-neutral-500 text-neutral-800 dark:text-neutral-200 font-semibold text-xs sm:text-sm hover:scale-105 active:scale-95 transition-all"

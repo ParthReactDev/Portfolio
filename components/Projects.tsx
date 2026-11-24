@@ -18,6 +18,20 @@ export default function Projects() {
 
   const projectsData: Project[] = [
     {
+      title: "Farmer B2B & B2C Portal",
+      category: "b2b-b2c",
+      platform: "React Native & Next.js",
+      tagline: "Agriculture Marketplace Web & Mobile App",
+      description: "An end-to-end agriculture marketplace connecting farmers directly with businesses and consumers through a web portal and mobile app.",
+      features: [
+        "Built a farmer marketplace with a B2B & B2C Next.js web portal and a React Native B2C mobile app",
+        "Enables farmers to sell produce directly to businesses and retail consumers",
+        "Role-based access, secure authentication, and end-to-end product and order management",
+        "Seamless cart and checkout flows with real-time push notifications across web, Android, and iOS"
+      ],
+      tags: ["React Native", "Next.js", "B2B & B2C", "Agriculture", "Push Notifications"]
+    },
+    {
       title: "Travel Terminus",
       category: "b2b-b2c",
       platform: "React Native (B2B & B2C)",
@@ -109,7 +123,7 @@ export default function Projects() {
             Featured Projects
           </h2>
           <p className="mt-4 text-base text-neutral-500 dark:text-neutral-400">
-            A showcase of custom mobile apps I have architected, containing heavy hardware/BLE integrations, secure checkouts, and custom native bridges.
+            A showcase of full-stack web and mobile applications I have architected and built, spanning agriculture marketplaces, travel booking engines, IoT/BLE devices, and enterprise systems.
           </p>
         </div>
 

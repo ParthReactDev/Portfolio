@@ -29,9 +29,10 @@ export default function Skills() {
       title: "Frontend & Web",
       description: "Developing fast, responsive, and robust web user interfaces.",
       skills: [
+        "Next.js",
+        "React JS",
         "JavaScript (ES6+)",
         "TypeScript",
-        "React JS",
         "Redux Toolkit",
         "Context API",
         "HTML5 / Tailwind CSS 4"

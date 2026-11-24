@@ -17,15 +17,28 @@ export default function Experience() {
     {
       type: "work",
       role: "Senior Software Engineer",
+      company: "Self-Employed",
+      location: "Ahmedabad, India",
+      duration: "July 2026 - Present",
+      description: [
+        "Designing and developing full-stack web and mobile applications for agriculture-sector clients.",
+        "Handling requirement analysis, architecture, development, and delivery independently.",
+        "Building scalable B2B and B2C platforms with Next.js and React Native, covering authentication, API integration, and responsive UI.",
+        "Managing end-to-end project roadmaps, client communications, and deployments across web and mobile platforms."
+      ]
+    },
+    {
+      type: "work",
+      role: "Software Engineer Level - 2",
       company: "OneClick IT Consultancy Pvt Ltd",
       location: "Ahmedabad, India",
-      duration: "Oct 2023 - Present",
+      duration: "Oct 2023 - June 2026",
       description: [
-        "Leading React Native mobile application development projects, making key architectural and technical decisions.",
+        "Leading React Native mobile application development projects, sprint planning, and architectural decisions.",
         "Managing projects independently, collaborating directly with clients to refine requirements and deliverables.",
-        "Creating Work Breakdown Structures (WBS) and reliable project estimations.",
-        "Conducting comprehensive code reviews and mentoring junior team members to maintain high quality code standards.",
-        "Developing scalable apps across Travel Booking, Event Management, Social Networking, and BLE applications."
+        "Creating Work Breakdown Structures (WBS), project estimations, and performing comprehensive code reviews.",
+        "Mentoring team members and enforcing high code quality standards.",
+        "Developing scalable applications for Travel Booking, Event Management, Social Networking, and BLE Applications."
       ]
     },
     {
@@ -35,10 +48,10 @@ export default function Experience() {
       location: "Ahmedabad, India",
       duration: "Jan 2021 - Oct 2023",
       description: [
-        "Developed custom mobile applications for enterprise HRMS, ERP, and B2B Retail solutions.",
-        "Integrated complex REST/GraphQL APIs and optimized real-time background synchronization.",
-        "Enhanced application performance, load times, and touch responsiveness on iOS and Android.",
-        "Worked with native modules, native bridges, and integrated hardware peripherals like Bluetooth barcode scanners and receipt printers."
+        "Developed mobile applications for HRMS, ERP, and Retail solutions with advanced business workflows.",
+        "Integrated APIs and real-time synchronization features for offline-first operational resilience.",
+        "Improved application performance, load times, and UI responsiveness across iOS and Android.",
+        "Worked with native modules, native bridges, and integrated hardware peripherals like Bluetooth thermal printers and barcode scanners."
       ]
     },
     {

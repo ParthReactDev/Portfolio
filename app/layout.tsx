@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Parth Lunagaria | Senior Software Engineer",
-  description: "Official portfolio of Parth Lunagaria, a Senior Software Engineer with 5 years 8 months of experience building high-performance iOS and Android applications with React Native.",
-  keywords: ["Parth Lunagaria", "Senior Software Engineer", "React Native", "iOS", "Android", "Mobile App Developer", "Ahmedabad", "Next.js Portfolio"],
+  description: "Official portfolio of Parth Lunagaria, a Senior Software Engineer with 5+ years of experience building scalable, high-performance mobile and web applications with React Native and Next.js.",
+  keywords: ["Parth Lunagaria", "Senior Software Engineer", "React Native", "Next.js", "Full-Stack Developer", "iOS", "Android", "Mobile App Developer", "Ahmedabad", "Next.js Portfolio"],
 };
 
 export default function RootLayout({

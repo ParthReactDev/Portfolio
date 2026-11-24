@@ -7,8 +7,8 @@ export default function Hero() {
   const [imgError, setImgError] = useState<boolean>(false);
 
   const stats = [
-    { value: "5.8+", label: "Years of Experience" },
-    { value: "10+", label: "Mobile Apps Built" },
+    { value: "5+ Years", label: "Professional Experience" },
+    { value: "12+", label: "Web & Mobile Apps Built" },
     { value: "2+", label: "Leading Platforms" },
     { value: "5+", label: "AI Tools Integrated" },
   ];
@@ -41,7 +41,7 @@ export default function Hero() {
             </div>
 
             <p className="mt-6 text-base sm:text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl leading-relaxed">
-              A results-driven <span className="font-semibold text-neutral-900 dark:text-white">Senior Software Engineer</span> with <span className="font-semibold text-neutral-900 dark:text-white">5 years 8 months of experience</span> building high-performance iOS and Android applications with React Native. I specialise in the{" "}
+              A results-driven <span className="font-semibold text-neutral-900 dark:text-white">Senior Software Engineer</span> with <span className="font-semibold text-neutral-900 dark:text-white">5+ years of experience</span> building scalable, high-performance mobile and web applications for B2B and B2C platforms. I specialize in <span className="font-semibold text-neutral-900 dark:text-white">Next.js &amp; React Native</span>, with deep expertise in the{" "}
               <a
                 href="#skills"
                 onClick={(e) => {
@@ -63,7 +63,7 @@ export default function Hero() {
               >
                 native module bridging
               </a>{" "}
-              in Kotlin and Swift — and I lead monorepo architectures that put whole app portfolios on one release path.
+              in Kotlin and Swift — building end-to-end solutions from architecture and API design to production delivery.
             </p>
 
             {/* CTAs */}
@@ -94,7 +94,7 @@ export default function Hero() {
             {/* Social quick links */}
             <div className="mt-8 flex gap-4 text-neutral-400 dark:text-neutral-500">
               <a
-                href="https://www.linkedin.com/in/parth-lunagaria-5081891a8"
+                href="https://www.linkedin.com/in/parth-lunagaria"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-emerald-500 dark:hover:text-cyan-400 transition-colors"
