@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RN Resume Studio — India Job Apply & Overleaf LaTeX Generator</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo-badge">PL</div>
+      <div>
+        <h1>RN Resume Studio</h1>
+        <p>India React Native Jobs • JD ATS Tailor • Overleaf LaTeX</p>
+      </div>
+    </div>
+
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-tab="tailor">Tailor &amp; Overleaf</button>
+      <button class="tab" data-tab="jobs">Recent India Jobs</button>
+      <button class="tab" data-tab="tracker">Applications (<span id="tracker-count">0</span>)</button>
+      <button class="tab" data-tab="profile">Master Profile</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- TAB 1: TAILOR & OVERLEAF -->
+    <section id="tab-tailor" class="tab-panel active">
+      <div class="split-layout">
+        <!-- LEFT: JD INPUT + ATS + EDITOR -->
+        <div class="panel-col">
+          <div class="card">
+            <div class="card-head">
+              <h2>1. Target Job Description (JD)</h2>
+              <div class="inline-actions">
+                <select id="sample-jd-select" class="select-sm">
+                  <option value="">Load sample Indian RN JD...</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid-2">
+              <label class="field">
+                <span>Company Name</span>
+                <input id="company-input" type="text" placeholder="e.g. Razorpay, Zepto, Swiggy" />
+              </label>
+              <label class="field">
+                <span>Target Role Title</span>
+                <input id="role-input" type="text" placeholder="e.g. Senior React Native Engineer" />
+              </label>
+            </div>
+
+            <div class="grid-3">
+              <label class="field">
+                <span>Job Portal</span>
+                <input id="portal-input" type="text" placeholder="LinkedIn / Naukri / Instahyre" value="LinkedIn India" />
+              </label>
+              <label class="field">
+                <span>Job URL (Optional)</span>
+                <input id="job-url-input" type="url" placeholder="https://..." />
+              </label>
+              <label class="field">
+                <span>Projects in Resume</span>
+                <select id="max-projects-select">
+                  <option value="4" selected>Top 4 Relevant</option>
+                  <option value="5">Top 5 Relevant</option>
+                  <option value="6">All 6 Projects</option>
+                </select>
+              </label>
+            </div>
+
+            <label class="field">
+              <span>Paste Job Description</span>
+              <textarea id="jd-input" rows="8" placeholder="Paste the full React Native Job Description here (responsibilities, required skills, nice-to-haves)..."></textarea>
+            </label>
+
+            <details class="ai-box">
+              <summary>Optional AI Bullet Rewriter (Gemini / OpenAI)</summary>
+              <div class="ai-grid">
+                <label class="field">
+                  <span>Provider</span>
+                  <select id="ai-provider">
+                    <option value="gemini">Google Gemini</option>
+                    <option value="openai">OpenAI</option>
+                  </select>
+                </label>
+                <label class="field">
+                  <span>Model (optional)</span>
+                  <input id="ai-model" type="text" placeholder="gemini-2.5-flash / gpt-4o-mini" />
+                </label>
+                <label class="field">
+                  <span>API Key (stored locally in browser)</span>
+                  <input id="ai-key" type="password" placeholder="Leave blank to use offline ATS engine" />
+                </label>
+              </div>
+              <p class="hint">AI only rephrases existing factual experience &amp; project bullets to match JD phrasing—never fabricates companies, metrics, or skills.</p>
+            </details>
+
+            <div class="action-bar">
+              <button id="btn-tailor" class="btn btn-primary">Tailor Resume (Offline ATS)</button>
+              <button id="btn-ai-enhance" class="btn btn-accent">Polish with AI</button>
+              <button id="btn-save-app" class="btn btn-secondary">Save to Tracker</button>
+            </div>
+          </div>
+
+          <!-- ATS ANALYSIS -->
+          <div class="card" id="ats-card">
+            <div class="card-head">
+              <h2>2. ATS Match &amp; Keyword Analysis</h2>
+              <div class="score-pill" id="ats-score-pill">Score: --%</div>
+            </div>
+            <div class="ats-groups">
+              <div>
+                <div class="sub-label">Matched Keywords (Auto-prioritized)</div>
+                <div id="matched-chips" class="chips"></div>
+              </div>
+              <div>
+                <div class="sub-label">JD Keywords Missing From Profile (Honest Gaps)</div>
+                <div id="missing-chips" class="chips"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- INLINE RESUME EDITOR -->
+          <div class="card">
+            <div class="card-head">
+              <h2>3. Fine-Tune Tailored Content</h2>
+              <button id="btn-regenerate-latex" class="btn btn-sm btn-secondary">Sync Preview &amp; LaTeX</button>
+            </div>
+
+            <label class="field">
+              <span>Header Role / Headline</span>
+              <input id="edit-headline" type="text" />
+            </label>
+
+            <label class="field">
+              <span>Tailored Professional Summary</span>
+              <textarea id="edit-summary" rows="4"></textarea>
+            </label>
+
+            <div id="edit-skills-container" class="editor-section"></div>
+            <div id="edit-experiences-container" class="editor-section"></div>
+            <div id="edit-projects-container" class="editor-section"></div>
+          </div>
+        </div>
+
+        <!-- RIGHT: PREVIEW + OVERLEAF EXPORT -->
+        <div class="panel-col sticky-col">
+          <div class="card preview-card">
+            <div class="card-head wrap-head">
+              <div class="view-switch">
+                <button class="switch-btn active" data-view="preview">Live A4 Preview</button>
+                <button class="switch-btn" data-view="latex">Overleaf LaTeX (.tex)</button>
+                <button class="switch-btn" data-view="email">Draft Email</button>
+              </div>
+
+              <div class="export-controls">
+                <select id="template-select" class="select-sm">
+                  <option value="ats-classic">ATS Classic (Recommended)</option>
+                  <option value="modern-teal">Modern Teal Accent</option>
+                </select>
+                <button id="btn-copy-latex" class="btn btn-sm btn-secondary">Copy .tex</button>
+                <button id="btn-download-latex" class="btn btn-sm btn-secondary">Download .tex</button>
+                <button id="btn-download-pdf" class="btn btn-sm btn-accent">Download PDF</button>
+                <button id="btn-save-disk" class="btn btn-sm btn-secondary">Save to output/</button>
+                <button id="btn-open-overleaf" class="btn btn-sm btn-primary">Open in Overleaf</button>
+              </div>
+            </div>
+
+            <div id="status-banner" class="status-banner hidden"></div>
+
+            <div id="view-preview" class="preview-surface"></div>
+            <div id="view-latex" class="latex-surface hidden">
+              <textarea id="latex-code" readonly spellcheck="false"></textarea>
+            </div>
+            <div id="view-email" class="email-surface hidden">
+              <div class="card-head" style="margin-bottom:0.25rem;">
+                <span class="hint">Auto-generated directly from your JD + resume details (no manual writing needed).</span>
+                <span id="email-source-pill" class="score-pill">Auto-Drafted</span>
+              </div>
+              <div class="grid-3">
+                <label class="field">
+                  <span>Email Style</span>
+                  <select id="email-tone">
+                    <option value="standard" selected>HR / Recruiter Application</option>
+                    <option value="short">Short Pitch (Manager / Startup)</option>
+                    <option value="followup">Application Follow-up</option>
+                  </select>
+                </label>
+                <label class="field">
+                  <span>Detected Recruiter (Optional)</span>
+                  <input id="email-recruiter" type="text" placeholder="Auto-detected from JD if present" />
+                </label>
+                <label class="field">
+                  <span>Detected Recipient Email (To)</span>
+                  <input id="email-to" type="email" placeholder="Auto-detected from JD if present" />
+                </label>
+              </div>
+
+              <label class="field">
+                <span>Generated Subject</span>
+                <input id="email-subject" type="text" />
+              </label>
+
+              <label class="field">
+                <span>Generated Email Body (with Portfolio Link)</span>
+                <textarea id="email-body" rows="15"></textarea>
+              </label>
+
+              <div class="action-bar">
+                <button id="btn-ai-email" class="btn btn-sm btn-accent">Auto-Draft with AI</button>
+                <button id="btn-copy-subject" class="btn btn-sm btn-secondary">Copy Subject</button>
+                <button id="btn-copy-email" class="btn btn-sm btn-secondary">Copy Full Email</button>
+                <a id="btn-open-mailto" class="btn btn-sm btn-primary" href="mailto:">Open in Mail App</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: RECENT INDIA JOBS -->
+    <section id="tab-jobs" class="tab-panel">
+      <div class="card">
+        <div class="card-head">
+          <h2>Recent React Native Jobs in India</h2>
+          <span class="hint">Generates live, date-sorted search links across top Indian hiring portals</span>
+        </div>
+
+        <div class="grid-4">
+          <label class="field">
+            <span>Search Query</span>
+            <input id="job-query" type="text" value="React Native Developer" />
+          </label>
+          <label class="field">
+            <span>City / Region</span>
+            <select id="job-location"></select>
+          </label>
+          <label class="field">
+            <span>Posted Within</span>
+            <select id="job-days">
+              <option value="1">Last 24 hours</option>
+              <option value="3">Last 3 days</option>
+              <option value="7" selected>Last 7 days</option>
+              <option value="15">Last 15 days</option>
+            </select>
+          </label>
+          <label class="field checkbox-field">
+            <span>Work Mode</span>
+            <label class="check-inline">
+              <input id="job-remote" type="checkbox" />
+              <span>Remote Only</span>
+            </label>
+          </label>
+        </div>
+
+        <div id="portal-cards" class="portal-grid"></div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h2>Sample Recent Indian React Native JDs (1-Click Tailor)</h2>
+        </div>
+        <div id="sample-jd-cards" class="portal-grid"></div>
+      </div>
+    </section>
+
+    <!-- TAB 3: APPLICATION TRACKER -->
+    <section id="tab-tracker" class="tab-panel">
+      <div class="card">
+        <div class="card-head">
+          <h2>Job Application Tracker</h2>
+          <span class="hint">Saved locally in <code>rn-resume-studio/data/applications.json</code></span>
+        </div>
+        <div class="table-wrap">
+          <table class="tracker-table">
+            <thead>
+              <tr>
+                <th>Company &amp; Role</th>
+                <th>Portal / Location</th>
+                <th>ATS Score</th>
+                <th>Status</th>
+                <th>LaTeX File</th>
+                <th>Updated</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="tracker-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: MASTER PROFILE -->
+    <section id="tab-profile" class="tab-panel">
+      <div class="card">
+        <div class="card-head">
+          <h2>Master Profile JSON</h2>
+          <div class="inline-actions">
+            <button id="btn-format-profile" class="btn btn-sm btn-secondary">Format JSON</button>
+            <button id="btn-save-profile" class="btn btn-sm btn-primary">Save Master Profile</button>
+          </div>
+        </div>
+        <p class="hint">Pre-populated from your latest portfolio (July 2026–Present Self-Employed, Farmer B2B &amp; B2C Portal, OneClick IT, Alpha E Barcode, New Architecture, Kotlin/Swift bridging). Edit and save anytime.</p>
+        <textarea id="master-profile-json" rows="28" class="code-editor" spellcheck="false"></textarea>
+      </div>
+    </section>
+  </main>
+
+  <!-- Hidden form for opening directly in Overleaf -->
+  <form id="overleaf-form" action="https://www.overleaf.com/docs" method="post" target="_blank" class="hidden">
+    <textarea name="snip" id="overleaf-snip"></textarea>
+    <input type="hidden" name="snip_name" id="overleaf-snip-name" value="Parth_Lunagaria_Resume.tex" />
+  </form>
+
+  <script src="/app.js" type="module"></script>
+</body>
+</html>

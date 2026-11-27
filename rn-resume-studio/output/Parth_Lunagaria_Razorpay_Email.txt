@@ -1,0 +1,21 @@
+Subject: Application for Senior React Native Engineer at Razorpay | Parth Lunagaria (5+ Yrs React Native)
+
+Hi Hiring Team,
+
+I am writing to apply for the Senior React Native Engineer role at Razorpay. I bring 5+ years of experience architecting, scaling, and shipping high-performance React Native mobile apps across Android and iOS (along with Next.js web platforms) for B2B and B2C products.
+
+Key highlights relevant to this role:
+- Core Stack & Native Depth: Strong expertise in React Native, React Native New Architecture, Native Modules (Kotlin / Swift), TypeScript, Redux / Redux Toolkit, including React Native New Architecture and custom Kotlin/Swift Native Modules.
+- Production Delivery: Delivered complex consumer and enterprise apps including Travel Terminus (Flight & Hotel Booking Platform) and Farmer B2B & B2C Portal (Agriculture Marketplace Web & Mobile App).
+- Ownership & Mentorship: Experienced in mobile app architecture, sprint planning, code reviews, mentoring engineers, and end-to-end client/product delivery.
+
+Availability: Immediate / Open to Remote & Hybrid across India (Current base: Ahmedabad, Gujarat, India)
+Portfolio: https://parth-lunagaria-portfolio.vercel.app/
+LinkedIn: https://www.linkedin.com/in/parth-lunagaria
+Phone / WhatsApp: +91 91069-60267
+
+I have attached my tailored resume for your consideration. Would love to connect for an introductory discussion.
+
+Best regards,
+Parth Lunagaria
+parthlunagaria11@gmail.com

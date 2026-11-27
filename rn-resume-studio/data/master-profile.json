@@ -1,0 +1,304 @@
+{
+  "basics": {
+    "name": "Parth Lunagaria",
+    "headline": "Senior Software Engineer (React Native & Next.js)",
+    "phone": "+91 91069-60267",
+    "email": "parthlunagaria11@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/parth-lunagaria",
+    "linkedinLabel": "linkedin.com/in/parth-lunagaria",
+    "portfolio": "https://parth-lunagaria-portfolio.vercel.app/",
+    "location": "Ahmedabad, Gujarat, India",
+    "yearsOfExperience": "5+",
+    "availability": "Immediate / Open to Remote & Hybrid across India",
+    "languages": [
+      "English",
+      "Hindi",
+      "Gujarati"
+    ],
+    "summary": "Results-driven Senior Software Engineer with 5+ years of experience architecting and delivering scalable, high-performance React Native mobile apps and Next.js web platforms across B2B and B2C domains. Deep expertise in the React Native New Architecture, Native Module bridging (Kotlin & Swift), GraphQL, REST APIs, real-time WebSockets, BLE hardware integrations, and Razorpay payments."
+  },
+  "skillCategories": [
+    {
+      "id": "mobile",
+      "title": "Mobile Core & Native",
+      "skills": [
+        "React Native",
+        "React Native New Architecture",
+        "Native Module Bridging (Kotlin & Swift)",
+        "TypeScript",
+        "JavaScript (ES6+)",
+        "Monorepo Architecture",
+        "Background Geolocation",
+        "Push Notifications (FCM / APNs)",
+        "BLE Devices",
+        "Biometrics Integration"
+      ]
+    },
+    {
+      "id": "frontend",
+      "title": "State Management & Web",
+      "skills": [
+        "Redux Toolkit",
+        "Context API",
+        "React.js",
+        "Next.js"
+      ]
+    },
+    {
+      "id": "integrations",
+      "title": "APIs, Payments & Cloud",
+      "skills": [
+        "GraphQL / Apollo Client",
+        "RESTful APIs",
+        "WebSocket Integration",
+        "Firebase Services",
+        "Razorpay Payment Gateway",
+        "Google Maps SDK",
+        "Socket Programming"
+      ]
+    },
+    {
+      "id": "engineering",
+      "title": "Architecture, AI & Delivery",
+      "skills": [
+        "Mobile App Architecture",
+        "Git & GitHub Actions (CI/CD)",
+        "Agile / Scrum / Sprint Planning",
+        "Code Reviews & Mentorship",
+        "WBS & Project Estimation",
+        "Android & iOS Store Releases",
+        "AI Coding Tools (Antigravity, Claude, Gemini, Cline)"
+      ]
+    }
+  ],
+  "experiences": [
+    {
+      "id": "exp-self-employed",
+      "role": "Senior Software Engineer",
+      "company": "HK DataCrest",
+      "location": "Remote",
+      "duration": "July 2026 - Present",
+      "tags": [
+        "react-native",
+        "nextjs",
+        "typescript",
+        "architecture",
+        "b2b",
+        "b2c",
+        "agritech",
+        "ecommerce",
+        "push-notifications",
+        "rest",
+        "leadership",
+        "end-to-end"
+      ],
+      "bullets": [
+        "Architected and delivered full-stack web and mobile platforms for agriculture-sector B2B and B2C clients using React Native and Next.js.",
+        "Led end-to-end requirement analysis, technical architecture, authentication, API integration, and responsive UI delivery independently.",
+        "Implemented role-based access control, product/order management, seamless cart & checkout workflows, and real-time push notifications across Android, iOS, and web.",
+        "Owned sprint roadmaps, client communication, performance optimization, and production deployments across mobile and web."
+      ]
+    },
+    {
+      "id": "exp-oneclick",
+      "role": "Software Engineer Level - 2",
+      "company": "OneClick IT Consultancy Pvt Ltd",
+      "location": "Ahmedabad, India",
+      "duration": "Oct 2023 - June 2026",
+      "tags": [
+        "react-native",
+        "new-architecture",
+        "native-modules",
+        "kotlin",
+        "swift",
+        "typescript",
+        "graphql",
+        "websockets",
+        "ble",
+        "razorpay",
+        "geolocation",
+        "maps",
+        "leadership",
+        "mentorship",
+        "agile",
+        "travel",
+        "social"
+      ],
+      "bullets": [
+        "Led React Native mobile application development across Travel Booking, Event Management, Social Networking, and BLE wearable products.",
+        "Drove mobile application architecture, sprint planning, Work Breakdown Structures (WBS), project estimations, and technical decision-making.",
+        "Managed projects independently while collaborating directly with US and domestic clients to refine requirements and ship milestones.",
+        "Mentored junior engineers and enforced high code quality through thorough code reviews, modular state management, and reusable components.",
+        "Built custom Native Modules (Kotlin/Swift) and background services for BLE connectivity, crash/fall detection, real-time tracking, and payment gateways."
+      ]
+    },
+    {
+      "id": "exp-alpha",
+      "role": "React Native Developer",
+      "company": "Alpha E Barcode Solutions Pvt Ltd",
+      "location": "Ahmedabad, India",
+      "duration": "Jan 2021 - Oct 2023",
+      "tags": [
+        "react-native",
+        "javascript",
+        "redux",
+        "rest",
+        "offline",
+        "native-modules",
+        "bluetooth",
+        "biometrics",
+        "maps",
+        "razorpay",
+        "sockets",
+        "performance",
+        "hrms",
+        "erp",
+        "retail"
+      ],
+      "bullets": [
+        "Developed enterprise-grade React Native mobile applications for HRMS, Payroll, ERP, and B2B Retail solutions with complex business workflows.",
+        "Integrated REST APIs and real-time synchronization features to support offline-first operational resilience in field environments.",
+        "Improved application startup performance, list rendering speed, and UI responsiveness across Android and iOS devices.",
+        "Implemented native bridges and hardware integrations including Rugtek/Sunmi Bluetooth thermal printers, barcode scanners, biometrics, and socket-based dynamic watermark capture."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-farmer",
+      "title": "Farmer B2B & B2C Portal",
+      "platform": "React Native & Next.js",
+      "tagline": "Agriculture Marketplace Web & Mobile App",
+      "tags": [
+        "react-native",
+        "nextjs",
+        "typescript",
+        "b2b",
+        "b2c",
+        "ecommerce",
+        "checkout",
+        "push-notifications",
+        "auth",
+        "fullstack"
+      ],
+      "bullets": [
+        "Built an agriculture marketplace featuring a Next.js B2B/B2C web portal and a React Native B2C mobile app connecting farmers directly with businesses and retail buyers.",
+        "Implemented role-based authentication, end-to-end catalog/order management, cart & checkout flows, and real-time push notifications across web, Android, and iOS."
+      ]
+    },
+    {
+      "id": "proj-travel",
+      "title": "Travel Terminus",
+      "platform": "React Native (B2B & B2C)",
+      "tagline": "Flight & Hotel Booking Platform",
+      "tags": [
+        "react-native",
+        "razorpay",
+        "payments",
+        "rest",
+        "graphql",
+        "redux",
+        "performance",
+        "b2b",
+        "b2c",
+        "travel",
+        "ecommerce"
+      ],
+      "bullets": [
+        "Developed a B2B & B2C flight and hotel booking platform with multi-supplier API integrations, one-way/roundtrip flows, and real-time fare, baggage, and refund breakdowns.",
+        "Integrated Razorpay payment gateway, loyalty points system, and optimized search-to-checkout performance across Android and iOS."
+      ]
+    },
+    {
+      "id": "proj-reqsq",
+      "title": "ReqsQ – Emergency Alert",
+      "platform": "React Native (US Client)",
+      "tagline": "BLE Wearable Human Safety Application",
+      "tags": [
+        "react-native",
+        "ble",
+        "bluetooth",
+        "native-modules",
+        "kotlin",
+        "swift",
+        "geolocation",
+        "background-services",
+        "push-notifications",
+        "iot"
+      ],
+      "bullets": [
+        "Engineered a human safety React Native app paired with BLE wearable hardware for real-time panic alerts and background emergency response.",
+        "Built custom Native Modules for automatic crash & fall detection, background BLE connectivity, live geolocation tracking, emergency audio recording, and instant contact alerts."
+      ]
+    },
+    {
+      "id": "proj-wrld",
+      "title": "Wrld – Connect In Person",
+      "platform": "React Native (US Client)",
+      "tagline": "Real-Time College Social Networking App",
+      "tags": [
+        "react-native",
+        "websockets",
+        "maps",
+        "geolocation",
+        "geofencing",
+        "social",
+        "realtime",
+        "firebase"
+      ],
+      "bullets": [
+        "Built a social networking mobile platform for college students with event creation, participation workflows, follow systems, and real-time WebSocket messaging.",
+        "Implemented Google Maps attendee discovery and background geolocation/geofencing for nearby participant tracking."
+      ]
+    },
+    {
+      "id": "proj-alpha-payroll",
+      "title": "Alpha Payroll – HRMS Solution",
+      "platform": "React Native",
+      "tagline": "Enterprise Workforce & Payroll App",
+      "tags": [
+        "react-native",
+        "biometrics",
+        "geolocation",
+        "maps",
+        "push-notifications",
+        "enterprise",
+        "hrms",
+        "offline"
+      ],
+      "bullets": [
+        "Developed an enterprise HRMS & Payroll app supporting TouchID/FaceID biometric check-in, leave approvals, and automated task notifications.",
+        "Integrated live GPS tracking and Google Maps to monitor field salesman tour paths, attendance activities, and monthly analytics."
+      ]
+    },
+    {
+      "id": "proj-gretail",
+      "title": "Gretail Extreme",
+      "platform": "React Native",
+      "tagline": "B2B Retail ERP & POS Billing System",
+      "tags": [
+        "react-native",
+        "bluetooth",
+        "sockets",
+        "razorpay",
+        "payments",
+        "erp",
+        "retail",
+        "offline",
+        "charts"
+      ],
+      "bullets": [
+        "Built a B2B retail ERP mobile application covering billing, invoicing, inventory, payment collection via Razorpay, and visual analytics dashboards.",
+        "Integrated Rugtek & Sunmi Bluetooth thermal printing and socket-based dynamic watermarked camera capture."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelors in Information Technology",
+      "institution": "Ganapat University",
+      "location": "Mehsana, Gujarat, India",
+      "duration": "March 2017 - March 2021"
+    }
+  ]
+}

@@ -17,8 +17,8 @@ export default function Experience() {
     {
       type: "work",
       role: "Senior Software Engineer",
-      company: "Self-Employed",
-      location: "Ahmedabad, India",
+      company: "HK DataCrest",
+      location: "Remote",
       duration: "July 2026 - Present",
       description: [
         "Designing and developing full-stack web and mobile applications for agriculture-sector clients.",

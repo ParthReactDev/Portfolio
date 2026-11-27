@@ -1,0 +1,12 @@
+{
+  "name": "rn-resume-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Standalone React Native (India) Job Search, ATS JD Resume Tailor, and Overleaf LaTeX Generator for Parth Lunagaria",
+  "scripts": {
+    "start": "node server.mjs",
+    "cli": "node cli.mjs",
+    "test": "node --test tests/studio.test.mjs"
+  }
+}
